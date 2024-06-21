@@ -9,7 +9,7 @@
 # ------------------------------------------------------------------
 
 VERSION=0.1.0
-USAGE="Usage: bash fdIndxr.sh > list.txt"
+USAGE="Usage: bash fileDateIndexer.sh > list.txt"
 
 set -o nounset
 
