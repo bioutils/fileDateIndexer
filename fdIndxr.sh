@@ -19,7 +19,6 @@ touch -t 202406210000.00 refend
 find $HOME -type f \
     -not \( -path "$HOME/Library/*" \
 	        -o -path "$HOME/LOGs/iterm/*" \
-	        -o -path "$HOME/LOGs/DOESNOTEXIST/*" \
 	        -o -path "$HOME/Pictures/Photos Library.photoslibrary/*" \
 	        -o -path "$HOME/\.*" \
 	        -o -wholename "*.git*" \) \
@@ -30,5 +29,6 @@ find $HOME -type f \
 # note 1: only find where time is after refstart, aka newer than refstart 
 # note 2: only find where time is NOT after refend, aka newer than refend 
 # note 3: but the file is not itself the refend file
+# note 4: does not throw error if one of the path/dirs does not exist
 # TODO do not create/use refstart file, refend file
 # TODO use an input date (opt), and convert to appropriate syntax to work
