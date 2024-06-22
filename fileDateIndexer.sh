@@ -13,8 +13,8 @@ USAGE="Usage: bash fileDateIndexer.sh > list.txt"
 
 set -o nounset
 
-touch -t 202406200000.00 refstart
-touch -t 202406210000.00 refend
+touch -t 202406190000.00 refstart
+touch -t 202406200000.00 refend
 
 find $HOME -type f \
     -not \( -path "$HOME/Library/*" \
